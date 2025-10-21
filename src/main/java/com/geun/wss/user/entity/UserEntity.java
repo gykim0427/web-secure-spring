@@ -2,58 +2,31 @@ package com.geun.wss.user.entity;
 
 import java.time.LocalDateTime;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
+@Table(name = "user")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserEntity {
-	
 	@Id
+	@Column(columnDefinition = "VARCHAR(30)")
 	private String userId;
+	@Column(columnDefinition = "VARCHAR(30)")
 	private String userNm;
+	@Column(columnDefinition = "CHAR(1)")
 	private String userPos;
+	@Column(columnDefinition = "CHAR(4)")
 	private String deptId;
+	@Column(columnDefinition = "DATETIME")
 	private LocalDateTime regDt;
-	
-	protected UserEntity() {};
-	
-	public UserEntity(String userId, String userNm, String userPos, String deptId, LocalDateTime regDt) {
-		super();
-		this.userId = userId;
-		this.userNm = userNm;
-		this.userPos = userPos;
-		this.deptId = deptId;
-		this.regDt = regDt;
-	}
-	
-	public String getUserId() {
-		return userId;
-	}
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-	public String getUserNm() {
-		return userNm;
-	}
-	public void setUserNm(String userNm) {
-		this.userNm = userNm;
-	}
-	public String getUserPos() {
-		return userPos;
-	}
-	public void setUserPos(String userPos) {
-		this.userPos = userPos;
-	}
-	public String getDeptId() {
-		return deptId;
-	}
-	public void setDeptId(String deptId) {
-		this.deptId = deptId;
-	}
-	public LocalDateTime getRegDt() {
-		return regDt;
-	}
-	public void setRegDt(LocalDateTime regDt) {
-		this.regDt = regDt;
-	}
 }

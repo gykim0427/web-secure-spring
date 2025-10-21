@@ -1,0 +1,11 @@
+<div layout:fragment="html_body">
+	<div th:each="user : ${userList}">
+		<p th:text="${user.userNm}"></p>
+	</div>
+</div>
+
+<script th:inline="javascript">
+	$(() => {
+		console.log("User list loaded");
+	});
+</script>

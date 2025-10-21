@@ -30,8 +30,21 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	
 	/* Maria DB Connect */
-	implementation 'org.mariadb.jdbc:mariadb-java-client:3.3.2'
+	implementation 'org.mariadb.jdbc:mariadb-java-client:3.1.4' /* Maria DB Version Compatibility Issues : 3.3.2 -> 3.1.4 version down */
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	
+	/* automatical server restart */
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'    
+	
+	/* lombok : automatical getter&setter */
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+	
+	/* validation */
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    
+	/* thymeleaf template engine */
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 }
 
 tasks.named('test') {
