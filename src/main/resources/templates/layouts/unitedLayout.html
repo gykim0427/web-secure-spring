@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko">
-    <head th:replace="~{layouts/commonHeader}"></head>
-	<body>
-    	<div layout:fragment="html_body"></div>
-    	<footer th:replace="~{layouts/commonFooter}"></footer>
-	</body>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="~{layouts/commonHeader :: header}"></head>
+<body>
+    <div layout:fragment="html_body"></div>
+    <footer th:replace="~{layouts/commonFooter :: footer}"></footer>
+</body>
 </html>

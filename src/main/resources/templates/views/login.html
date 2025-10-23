@@ -1,6 +1,6 @@
 <div layout:fragment="html_body">
 	<div th:each="user : ${userList}">
-		<p th:text="${user.userNm}"></p>
+		<p th:text="${user.userNm}">안녕</p>
 	</div>
 </div>
 
@@ -9,3 +9,16 @@
 		console.log("User list loaded");
 	});
 </script>
+
+<!-- 
+
+	<!DOCTYPE html>
+	<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+	      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<body layout:decorate="~{layouts/unitedLayout}">
+	    <div layout:fragment="html_body">
+	    </div>
+	</body>
+	</html>
+	
+-->
