@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @Controller
 public class LoginController {
 	@GetMapping(value = { "/" }, produces = { "application/json" })
-	public ModelAndView empam0210m(HttpServletRequest httpRequest, HttpServletResponse httpResponse) {
+	public ModelAndView login(HttpServletRequest httpRequest, HttpServletResponse httpResponse) {
 		ModelAndView view = new ModelAndView();
 		view.setViewName("views/login");
 		
