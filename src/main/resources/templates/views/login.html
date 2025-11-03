@@ -1,24 +1,9 @@
-<div layout:fragment="html_body">
-	<div th:each="user : ${userList}">
-		<p th:text="${user.userNm}">안녕</p>
-	</div>
-</div>
-
-<script th:inline="javascript">
-	$(() => {
-		console.log("User list loaded");
-	});
-</script>
-
-<!-- 
-
-	<!DOCTYPE html>
-	<html lang="ko" xmlns:th="http://www.thymeleaf.org"
-	      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-	<body layout:decorate="~{layouts/unitedLayout}">
-	    <div layout:fragment="html_body">
-	    </div>
-	</body>
-	</html>
-	
--->
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:replace="~{layouts/commonHeader :: commonHeader}"></head>
+<body>
+    <div layout:fragment="html_body"></div>
+    <footer th:replace="~{layouts/commonFooter :: commonFooter}"></footer>
+</body>
+</html>

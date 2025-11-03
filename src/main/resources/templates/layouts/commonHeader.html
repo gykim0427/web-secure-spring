@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" 
-xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-	<head th:fragment="header">
-	    <title>공통 헤더</title>
-		<script th:src="@{/js/jquery-3.7.1.min.js}"></script>
-	</head>
-</html>
+<th:block th:fragment="commonHeader">
+    <header>
+        <p>공통 헤더</p>
+    </header>
+</th:block>

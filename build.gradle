@@ -45,6 +45,9 @@ dependencies {
     
 	/* thymeleaf template engine */
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	
+	/* thymeleaf layout expansion */
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
 }
 
 tasks.named('test') {
