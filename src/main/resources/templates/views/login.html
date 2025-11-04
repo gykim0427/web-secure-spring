@@ -3,7 +3,20 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head th:replace="~{layouts/commonHeader :: commonHeader}"></head>
 <body>
-    <div layout:fragment="html_body"></div>
+    <div layout:fragment="html_body">
+		<div name="" class="">
+			<div name="" class="">
+				<input type="text"/>	
+			</div>
+			<div name="" class="">
+				<input type="password"/>	
+			</div>
+			<div name="" class="">
+				<button>로그인</button>
+			</div>
+		</div>
+	</div>
+	
     <footer th:replace="~{layouts/commonFooter :: commonFooter}"></footer>
 </body>
 </html>
