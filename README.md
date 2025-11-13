@@ -14,7 +14,7 @@
   - JAVA JDK 17
   - Javascript
 3. 데이터베이스
-  - Maria DB 10.5.5
+  - Maria DB 10.5.5 (? 버전업그레이드 필요 ?)
 4. 기술스택
   - Thymeleaf
   - JUnit
@@ -23,9 +23,11 @@
   - AJAX ?
 5. API / 라이브러리
   - JQuery
-  - Lombok ?
+  - Lombok (? 사용 중 ?)
 6. 그 외
-  - Tomcat 8.0 & 8.5 ?
+  - Tomcat 8.0 & 8.5 ? (내장 서버?)
 
 ## 주요 기능
 1. 로그인 ?
+2. CORS ?
+...
