@@ -14,9 +14,14 @@
 			<div name="" class="">
 				<button>로그인</button>
 			</div>
+			<input name="test" value="111" type="hidden"/>
 		</div>
 	</div>
 	
     <footer th:replace="~{layouts/commonFooter :: commonFooter}"></footer>
 </body>
 </html>
+
+<script th:inline="javascript">
+	alert($("input[name='test']").val());
+</script>
