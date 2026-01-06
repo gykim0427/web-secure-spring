@@ -23,5 +23,7 @@
 </html>
 
 <script th:inline="javascript">
-	alert($("input[name='test']").val());
+	$(function () {
+	    alert($("input[name='test']").val());
+	});	
 </script>
