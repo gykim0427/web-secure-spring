@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<head th:replace="~{layouts/commonHeader :: commonHeader}"></head>
+<th:block th:replace="~{layouts/commonHeader :: commonHeader}"></th:block>
 <body>
     <div layout:fragment="html_body">
-		<div name="" class="">
-			<div name="" class="">
-				<input type="text"/>	
+		<div id="" class="" name="">
+			<div id="" class="" name="">
+				<div id="" class="" name="">
+					<input id="" class="" name="" type="text"/>	
+				</div>
+				<div id="" class="" name="">
+					<input id="" class="" name="" type="password"/>
+				</div>
+				<div id="" class="" name="">
+					<button id="" class="" name="">로그인</button>
+				</div>
 			</div>
-			<div name="" class="">
-				<input type="password"/>	
+			<div id="" class="" name="">
+				<button id="regist" class="" name="regist">회원가입</button>
+				<button id="" class="" name="">아이디찾기</button>
+				<button id="" class="" name="">비밀번호찾기</button>
 			</div>
-			<div name="" class="">
-				<button>로그인</button>
-			</div>
-			<input name="test" value="111" type="hidden"/>
 		</div>
 	</div>
-	
-    <footer th:replace="~{layouts/commonFooter :: commonFooter}"></footer>
 </body>
+<th:block th:replace="~{layouts/commonFooter :: commonFooter}"></th:block>
 </html>
 
 <script th:inline="javascript">
 	$(function () {
-	    alert($("input[name='test']").val());
+		$('button[name="regist"]').click(function () {
+			alert("111");
+		})
 	});	
 </script>
